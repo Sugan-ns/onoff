@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            height: 50px;
+            width: 100px;
+            margin: 20px;
+            position: relative;
+            top: 820px;
+            left: 110px;
+            border-radius: 10px;
+            background-color:red;  
+            letter-spacing: px;
+            
+            
+        }
+        
+        img{
+            height: 680px;
+            width: 400px;
+            position: relative;
+            left: 40px;
+            top: -50px;
+            /* border-left-color: crimson;
+            border-right-color:crimson ;
+            border-top-color:darkgoldenrod ;
+            border-bottom-color:coral; */
+        }
+        .box{
+            background-color: rgb(0, 0, 0);
+            height: 800px;
+            width: 500px;
+            border-radius:30px;
+            border: 4px solid black;
+            
+            
+        }
+    </style>
+</head>
+<body>
+   <div class="box" style="background-color:black"><br>
+   
+    <button id="l"  onclick="turnon()"><b>ON</b></button> 
+    <button  id="r"  onclick="turnoff()"><b>OFF</b></button> <br>
+    <img id="bulb" src="/assert/light off.png"> <br><br>
+
+</div>
+<pre><h1>     CLICK ON BUTTON TO SEE ME</h1> </pre>
+
+    <script>
+        function turnon()
+        {
+            document.getElementById("bulb").src="/assert/light on.jpg";
+        }
+        function turnoff()
+        {
+            document.getElementById("bulb").src="/assert/light off.png";
+        }
+   
+    </script>
+</body>
+</html>
